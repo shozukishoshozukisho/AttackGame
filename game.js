@@ -316,52 +316,52 @@ window.onload = function(){
       var playerHit = battle.hitStrength(player.attack());
       if (player.inventory[0] === 0){
         if(player.inventory[1] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[2] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[3] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else{
-          var playerHit += 5;
+          playerHit += 5;
         }
       }else if (player.inventory[1] === 0){
         if(player.inventory[0] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[2] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[3] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else{
-          var playerHit += 5;
+          playerHit += 5;
         }
       }else if (player.inventory[2] === 0){
         if(player.inventory[1] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[0] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[3] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else{
-          var playerHit += 5;
+          playerHit += 5;
         }
       }else if (player.inventory[3] === 0){
         if(player.inventory[1] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[2] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[0] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else{
-          var playerHit += 5;
+          playerHit += 5;
         }
       }else if(player.inventory[0] === 1){
-        var playerHit += 10;
+        playerHit += 10;
       }else if(player.inventory[1] === 1){
-        var playerHit += 10;
+        playerHit += 10;
       }else if(player.inventory[2] === 1){
-        var playerHit += 10;
+        playerHit += 10;
       }else if(player.inventory[3] === 1){
-        var playerHit += 10;
+        playerHit += 10;
       };
       currentEnemy.hp = currentEnemy.hp - playerHit;
       battle.menu.text = "ダメージを " + playerHit + " 与えた！";
@@ -471,7 +471,7 @@ window.onload = function(){
       battle.over = false;
       battle.wait = true;
       battle.menu.text = "";
-      battle.enemy.frame = player.currentEnemy.sprite;
+      battle.enemy.frame = 15;
       setTimeout(function(){
         battle.menu.text = battle.listActions();
         battle.wait = false;
@@ -554,52 +554,52 @@ window.onload = function(){
       var playerHit = battleTwo.hitStrength(player.attack());
       if (player.inventory[0] === 0){
         if(player.inventory[1] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[2] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[3] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else{
-          var playerHit += 5;
+          playerHit += 5;
         }
       }else if (player.inventory[1] === 0){
         if(player.inventory[0] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[2] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[3] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else{
-          var playerHit += 5;
+          playerHit += 5;
         }
       }else if (player.inventory[2] === 0){
         if(player.inventory[1] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[0] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[3] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else{
-          var playerHit += 5;
+          playerHit += 5;
         }
       }else if (player.inventory[3] === 0){
         if(player.inventory[1] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[2] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[0] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else{
-          var playerHit += 5;
+          playerHit += 5;
         }
       }else if(player.inventory[0] === 1){
-        var playerHit += 10;
+        playerHit += 10;
       }else if(player.inventory[1] === 1){
-        var playerHit += 10;
+        playerHit += 10;
       }else if(player.inventory[2] === 1){
-        var playerHit += 10;
+        playerHit += 10;
       }else if(player.inventory[3] === 1){
-        var playerHit += 10;
+        playerHit += 10;
       };
       currentEnemy.hp = currentEnemy.hp - playerHit;
       battleTwo.menu.text = "ダメージを " + playerHit + " 与えた！";
@@ -689,7 +689,7 @@ window.onload = function(){
       battleTwo.over = false;
       battleTwo.wait = true;
       battleTwo.menu.text = "";
-      battleTwo.enemy.frame = player.currentEnemy.sprite;
+      battleTwo.enemy.frame = 16;
       setTimeout(function(){
         battleTwo.menu.text = battleTwo.listActions();
         battleTwo.wait = false;
@@ -773,52 +773,52 @@ window.onload = function(){
       var playerHit = battleBoss.hitStrength(player.attack());
       if (player.inventory[0] === 0){
         if(player.inventory[1] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[2] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[3] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else{
-          var playerHit += 5;
+          playerHit += 5;
         }
       }else if (player.inventory[1] === 0){
         if(player.inventory[0] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[2] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[3] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else{
-          var playerHit += 5;
+          playerHit += 5;
         }
       }else if (player.inventory[2] === 0){
         if(player.inventory[1] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[0] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[3] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else{
-          var playerHit += 5;
+          playerHit += 5;
         }
       }else if (player.inventory[3] === 0){
         if(player.inventory[1] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[2] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else if(player.inventory[0] === 1){
-          var playerHit += 10;
+          playerHit += 10;
         }else{
-          var playerHit += 5;
+          playerHit += 5;
         }
       }else if(player.inventory[0] === 1){
-        var playerHit += 10;
+        playerHit += 10;
       }else if(player.inventory[1] === 1){
-        var playerHit += 10;
+        playerHit += 10;
       }else if(player.inventory[2] === 1){
-        var playerHit += 10;
+        playerHit += 10;
       }else if(player.inventory[3] === 1){
-        var playerHit += 10;
+        playerHit += 10;
       };
       currentEnemy.hp = currentEnemy.hp - playerHit;
       battleBoss.menu.text = "ダメージを " + playerHit + " 与えた！";
@@ -907,7 +907,7 @@ window.onload = function(){
       battleBoss.over = false;
       battleBoss.wait = true;
       battleBoss.menu.text = "";
-      battleBoss.enemy.frame = player.currentEnemy.sprite;
+      battleBoss.enemy.frame = 17;
       setTimeout(function(){
         battleBoss.menu.text = battleBoss.listActions();
         battleBoss.wait = false;
