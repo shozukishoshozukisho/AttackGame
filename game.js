@@ -80,7 +80,7 @@ window.onload = function(){
                          {attack: 50, maxHp: 60, maxMp: 100, expMax: 40960*2*2*2*2*2*2*2*2*2},
                          {attack: 60, maxHp: 90, maxMp: 200, expMax: 40960*2*2*2*2*2*2*2*2*2*2},
                          {attack: 80, maxHp: 120, maxMp: 300, expMax: 40960*2*2*2*2*2*2*2*2*2*2*2},
-                         {attack: 100, maxHp: 150, maxMp: 400, expMax: 40960*2*2*2*2*2*2*2*2*2*2*2*2}
+                         {attack: 100, maxHp: 150, maxMp: 400, expMax: "max"}
     ];
     player.attack = function(){
       return player.levelStats[player.level].attack;
@@ -399,17 +399,7 @@ window.onload = function(){
         }, 1000);
       }},
       {name: "魔法", action: function(){
-        if(player.inventory[0] === 2){
-          battle.menu.text = "Ice Magicを放った";
-        }else if (player.inventory[1] === 2){
-          battle.menu.text = "Ice Magicを放った";
-        }else if(player.inventory[2] === 2){
-          battle.menu.text = "Ice Magicを放った";
-        }else if(player.inventory[3] === 2){
-          battle.menu.text = "Ice Magicを放った";
-        }else{
-          battle.menu.text = "まだ魔法を覚えてない！";
-        };
+        battle.menu.text = "まだ魔法を覚えてない！";   
         battle.playerMagic = function(){
           var playerHit = 5 * player.level;
           var currentEnemy = player.currentEnemy;
